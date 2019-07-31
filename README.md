@@ -1,4 +1,5 @@
 # zuuk:stale-session
+This package has added a flag that comes from meteor settings `staleSessionActive` that can turn off the stale session.
 
 Stale session and session timeout handling for [meteorjs](http://www.meteor.com/).
 
@@ -44,7 +45,8 @@ Example `config/settings.json` file:
     "staleSessionInactivityTimeout": 1800000,
     "staleSessionHeartbeatInterval": 180000,
     "staleSessionPurgeInterval": 60000,
-    "staleSessionActivityEvents": "mousemove click keydown"
+    "staleSessionActivityEvents": "mousemove click keydown",
+    "staleSessionActive": true
   }
 }
 ```
